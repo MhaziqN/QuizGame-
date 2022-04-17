@@ -1,0 +1,53 @@
+#Quiz Game
+
+print  ("Welcome to the Game !!!\n")
+
+name=input("what is your name ?\n")
+age=input("Age ?\n")
+
+if int(age) >= 18:
+    print ("Ok "+ name + " hope you have ready with today quiz. " )
+else:
+    print("This quiz are not suitable for under age ")
+    quit()
+
+start = input("Start the Quiz game (Yes/No)\n")
+if start.lower() == "yes":
+    print ("Good Luck !!")
+    score = 0
+
+ans = input("\nCPU stand for ?\n ")
+if ans.lower() == "central processing unit":
+    print('Well Done !!')
+    score+= 1
+    print("\nYour mark : "+ str(score) )
+else:
+    print("Wrong answer \n " + "The answered : Central Processing Unit ")
+
+ans = input("\nGPU stand for ?\n ")
+if ans.lower() == "graphic processing unit":
+    print('Well Done !!')
+    score+= 1
+    print("\nYour mark : " + str(score))
+else:
+    print("Wrong answer \n " + "The answered : graphic processing unit ")
+
+ans = input("\nPSU stand for ?\n ")
+if ans.lower() == "power supply":
+    print('Well Done !!')
+    score+= 1
+    print("\nYour mark : " + str(score))
+else:
+    print("Wrong answer \n " + "The answered : power supply ")
+
+ans = input("\nRAM stand for ?\n ")
+if ans.lower() == "random access memory":
+    print('Well Done !!')
+    score+= 1
+    print("\nYour mark : " + str(score))
+else:
+    print("Wrong answer \n " + "The answered : random access memory ")
+
+T_score = score/4*100
+
+print("\n\n Congratulation !!\n"+ name +", you have answered all the question.\n\n"+"Total Score: "+ str(T_score) +"%")
